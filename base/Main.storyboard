@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="odB-Hb-FiJ">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="WpM-Um-X0T">
+            <objects>
+                <viewController storyboardIdentifier="home" id="KVk-70-oEn" customClass="HomeViewController" customModule="music_theory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Smi-c3-CeF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIa-7f-yqz">
+                                <rect key="frame" x="169" y="59" width="76.333333333333314" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YIa-7f-yqz" firstAttribute="centerX" secondItem="Smi-c3-CeF" secondAttribute="centerX" id="YWc-B5-iJd"/>
+                            <constraint firstItem="YIa-7f-yqz" firstAttribute="top" secondItem="y8n-5V-UGA" secondAttribute="top" constant="15" id="kYF-8p-jEG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="y8n-5V-UGA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Q1-de-cSW"/>
+                    <connections>
+                        <outlet property="homeTitle" destination="YIa-7f-yqz" id="mSQ-6S-BVd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zOs-kc-taj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1046" y="2295"/>
+        </scene>
+        <!--Staff View Controller-->
+        <scene sceneID="M3V-aD-ECg">
+            <objects>
+                <viewController storyboardIdentifier="staff" id="QCP-hl-gEu" customClass="StaffViewController" customModule="music_theory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JHW-mc-oWd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lesson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpv-3Z-rMJ">
+                                <rect key="frame" x="164.33333333333334" y="59" width="85.666666666666657" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBK-bG-EJD">
+                                <rect key="frame" x="174.66666666666666" y="97.333333333333329" width="65" height="32.999999999999986"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xpv-3Z-rMJ" firstAttribute="top" secondItem="3zJ-eU-jNI" secondAttribute="top" constant="15" id="KpL-30-qwv"/>
+                            <constraint firstItem="uBK-bG-EJD" firstAttribute="centerX" secondItem="JHW-mc-oWd" secondAttribute="centerX" id="UlL-pu-LTJ"/>
+                            <constraint firstItem="Xpv-3Z-rMJ" firstAttribute="centerX" secondItem="JHW-mc-oWd" secondAttribute="centerX" id="nF6-wf-z1s"/>
+                            <constraint firstItem="uBK-bG-EJD" firstAttribute="top" secondItem="Xpv-3Z-rMJ" secondAttribute="bottom" id="xlW-4E-M80"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3zJ-eU-jNI"/>
+                    </view>
+                    <connections>
+                        <outlet property="lessonName" destination="uBK-bG-EJD" id="tWT-6r-ZbV"/>
+                        <outlet property="lessonTitle" destination="Xpv-3Z-rMJ" id="moU-h4-pq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwZ-kF-7yB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184" y="2295"/>
+        </scene>
+        <!--Piano-->
+        <scene sceneID="6Hj-oD-pMe">
+            <objects>
+                <viewController id="NL3-4c-w6o" customClass="PianoViewController" customModule="music_theory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j5i-ja-UuG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Piano" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1n0-Bb-7Hj">
+                                <rect key="frame" x="172" y="59" width="70" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1n0-Bb-7Hj" firstAttribute="top" secondItem="XeJ-eg-xzX" secondAttribute="top" constant="15" id="7AG-4w-hb8"/>
+                            <constraint firstItem="1n0-Bb-7Hj" firstAttribute="centerX" secondItem="j5i-ja-UuG" secondAttribute="centerX" id="pNK-eU-u7B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XeJ-eg-xzX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Piano" image="music.note" catalog="system" id="08W-xK-0PO"/>
+                    <connections>
+                        <outlet property="pianoTitle" destination="1n0-Bb-7Hj" id="6mg-Ss-lYz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4D-N1-WJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184" y="1580"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="La2-Ye-eIR">
+            <objects>
+                <tabBarController id="odB-Hb-FiJ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="cqU-bX-5dg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.93479400873184204" green="0.64105898141860962" blue="0.66668552160263062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0M1-IY-04q" kind="relationship" relationship="viewControllers" id="8ob-JP-ouF"/>
+                        <segue destination="NL3-4c-w6o" kind="relationship" relationship="viewControllers" id="jUw-Jq-dq6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l9m-Bm-mJr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184" y="852"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="qOp-GB-Ik6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="0M1-IY-04q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="irX-I6-HgU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fy1-Mm-RRG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KVk-70-oEn" kind="relationship" relationship="rootViewController" id="Zlf-zz-c48"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vP3-Nb-dAk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1046.376811594203" y="1579.6875"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.93370074033737183" green="0.70792526006698608" blue="0.66487002372741699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="music.note" catalog="system" width="97" height="128"/>
+    </resources>
+</document>
